@@ -21,7 +21,7 @@ Aplikasi web untuk menganalisis resume PDF Anda terhadap deskripsi pekerjaan. Da
 
 ## Pengenalan
 
-Aplikasi ini membantu pencari kerja dengan memberikan umpan balik langsung. Unggah resume PDF Anda dan tempelkan deskripsi pekerjaan untuk mendapatkan:
+Aplikasi ini membantu pencari kerja dengan memberikan umpan balik langsung. Unggah resume PDF Anda dan tuliskan deskripsi pekerjaan untuk mendapatkan:
 
 - Skor kecocokan yang menunjukkan persentase kesesuaian dengan persyaratan pekerjaan
 - Daftar kata kunci dari deskripsi pekerjaan yang ada di resume Anda
@@ -39,7 +39,7 @@ Proses pencocokan menggunakan daftar lebih dari 120 skill teknis dan soft skill 
 
 ## Fitur
 
-- Frontend yang bersih dan responsif
+- Frontend yang responsif
 - Validasi file PDF pada sisi client
 - Pemrosesan asinkron tanpa reload halaman
 - Ekstraksi teks dari PDF
@@ -188,8 +188,6 @@ $maxFileSize = 10 * 1024 * 1024; // 10 MB - ubah nilai ini
 
 ## Cara Penggunaan
 
-### Mulai Cepat
-
 1. Jalankan server PHP development:
 
 ```bash
@@ -218,9 +216,9 @@ http://localhost:8000
    - Pilih file PDF dari komputer Anda
    - File harus: Format PDF, ukuran maksimal 10 MB
 
-2. **Tempelkan Deskripsi Pekerjaan**
-   - Klik text area yang bertuliskan "Tempelkan Deskripsi Pekerjaan di Sini"
-   - Tempelkan teks deskripsi pekerjaan
+2. **Tuliskan Deskripsi Pekerjaan**
+   - Klik text area yang bertuliskan "Tuliskan Deskripsi Pekerjaan di Sini"
+   - Tuliskan teks deskripsi pekerjaan
    - Penghitung karakter akan terupdate otomatis
 
 3. **Analisis Kecocokan**
@@ -240,7 +238,7 @@ http://localhost:8000
 
 1. Download deskripsi pekerjaan dari situs pencarian kerja
 2. Unggah resume PDF Anda
-3. Tempelkan deskripsi pekerjaan
+3. Tuliskan deskripsi pekerjaan
 4. Tinjau skor kecocokan dan analisis kata kunci
 5. Gunakan feedback ini untuk menyesuaikan resume sebelum melamar
 
