@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencocokan Resume dan Deskripsi Pekerjaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Pencocokan Resume dan Deskripsi Pekerjaan</h1>
+            <p class="subtitle">Analisis resume Anda terhadap deskripsi pekerjaan untuk mengoptimalkan kesesuaian</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="form-group">
+                    <label for="resumeFile" class="label">Unggah Resume Anda (PDF saja)</label>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="resumeFile" accept=".pdf" class="file-input">
+                        <span class="file-name" id="fileName">Tidak ada file yang dipilih</span>
+                    </div>
+                    <small class="help-text">Ukuran file maksimal: 10 MB</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="jobDescription" class="label">Tempelkan Deskripsi Pekerjaan di Sini</label>
+                    <textarea id="jobDescription" class="textarea" placeholder="Tempelkan teks deskripsi pekerjaan di sini..."></textarea>
+                    <small class="help-text" id="charCount">0 karakter</small>
+                </div>
+
+                <button id="analyzeBtn" class="btn btn-primary" disabled>Analisis Kecocokan</button>
+            </section>
+
+            <!-- Loading Indicator -->
+            <div id="loadingSpinner" class="loading-spinner hidden">
+                <div class="spinner"></div>
+                <p>Menganalisis resume dan deskripsi pekerjaan Anda...</p>
+            </div>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="results-section hidden">
+                <!-- Match Score -->
+                <div class="score-container">
+                    <div class="score-card">
+                        <h2>Skor Kecocokan</h2>
+                        <div class="score-display">
+                            <span id="matchScore" class="score-value">0</span>
+                            <span class="score-unit">%</span>
+                        </div>
+                        <div class="score-bar">
+                            <div id="scoreBar" class="score-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keywords Found -->
+                <div class="results-grid">
+                    <div class="result-card">
+                        <h3 class="result-title">✓ Kata Kunci Ditemukan</h3>
+                        <ul id="foundKeywords" class="keywords-list">
+                            <!-- Populated by JavaScript -->
+                        </ul>
+                    </div>
+
+                    <!-- Keywords Missing -->
+                    <div class="result-card">
+                        <h3 class="result-title">✗ Kata Kunci Hilang</h3>
+                        <ul id="missingKeywords" class="keywords-list">
+                            <!-- Populated by JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button id="resetBtn" class="btn btn-secondary">Analisis Lagi</button>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section id="errorSection" class="error-section hidden">
+                <div class="error-message">
+                    <h3>⚠ Kesalahan</h3>
+                    <p id="errorText"></p>
+                </div>
+                <button id="dismissErrorBtn" class="btn btn-secondary">Tutup</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Pencocokan Resume. Optimalkan resume Anda untuk mendapatkan pekerjaan impian Anda.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
