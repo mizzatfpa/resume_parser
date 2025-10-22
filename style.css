@@ -393,17 +393,6 @@ body {
     margin-bottom: 1.5rem;
 }
 
-/* ========== Footer ========== */
-.footer {
-    background-color: var(--text-dark);
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
-    opacity: 0.8;
-    margin-top: auto;
-}
-
 /* ========== Utility Classes ========== */
 .hidden {
     display: none !important;
