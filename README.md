@@ -63,7 +63,7 @@ Proses pencocokan menggunakan daftar lebih dari 120 skill teknis dan soft skill 
 
 ```
 resume_parser/
-├── README.md                 # File ini
+├── README.md                # Penjelasan program
 ├── index.html               # Halaman HTML utama
 ├── style.css                # File CSS styling
 ├── app.js                   # JavaScript frontend
