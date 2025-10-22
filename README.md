@@ -110,7 +110,7 @@ php --version
 ### Langkah 1: Clone Repository
 
 ```bash
-git clone https://github.com/username-anda/resume-parser.git
+git clone https://github.com/mizzatfpa/resume_parser.git
 cd resume_parser
 ```
 
