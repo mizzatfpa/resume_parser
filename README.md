@@ -16,8 +16,6 @@ Aplikasi web untuk menganalisis resume PDF Anda terhadap deskripsi pekerjaan. Da
 - [Dokumentasi API](#dokumentasi-api)
 - [Kustomisasi](#kustomisasi)
 - [Mengatasi Masalah](#mengatasi-masalah)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
 
 ## Pengenalan
 
