@@ -1,14 +1,3 @@
-#!/usr/bin/env python3
-"""
-Resume-Job Description Matcher - Python Analysis Engine
-
-This script extracts text from a PDF resume and matches it against
-keywords extracted from a job description. It returns a JSON-formatted
-result containing the match score and keyword analysis.
-
-Skills are loaded from skills.json for easy customization and scaling.
-"""
-
 import sys
 import json
 import re
@@ -34,7 +23,7 @@ def load_skills_from_json():
         with open(skills_file, 'r', encoding='utf-8') as f:
             skills_data = json.load(f)
         
-        # Ratakan kamus bersarang menjadi satu kamus
+        # Ratakan nested dictionary menjadi satu kamus
         # misalnya, {"programming_languages": {"python": "...", "java": "..."}, ...}
         # menjadi {"python": "...", "java": "...", ...}
         flat_skills = {}
@@ -52,10 +41,10 @@ def load_skills_from_json():
     except json.JSONDecodeError:
         raise Exception("skills.json bukan JSON yang valid")
 
-# Load skills at startup
+# muat skills dari file JSON
 SKILL_PATTERNS = load_skills_from_json()
 
-# Create a compiled regex for fast matching
+# buat ekspresi reguler untuk mencocokkan keterampilan
 def create_skill_pattern(skill_dict):
     """Buat pola regex gabungan dari kamus keterampilan."""
     patterns = '|'.join(f'({pattern})' for pattern in skill_dict.values())
